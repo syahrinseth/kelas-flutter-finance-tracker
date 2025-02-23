@@ -1,16 +1,34 @@
-# flutter_finance_tracker
 
-A new Flutter project.
+A step-by-step Flutter project for students taking "Pembangunan Aplikasi Mudah Alih Dengan Flutter" course. This finance tracking application demonstrates various Flutter concepts and best practices.
+
+## Project Overview
+
+This repository contains code for a Finance Tracker application built with Flutter. The project is structured with git tags to help students follow along with each lesson.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/flutter_finance_tracker.git
+```
 
-A few resources to get you started if this is your first Flutter project:
+2. Navigate to a specific lesson using tags
+```bash
+git checkout lesson-1
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+3. Run the app
+```bash
+flutter pub get
+flutter run
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Requirements
+
+- Flutter (Latest stable version)
+- Dart SDK
+- Android Studio/VS Code
+
+## Need Help?
+
+Refer to the course materials or raise an issue in this repository for assistance.
