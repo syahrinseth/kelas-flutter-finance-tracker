@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_finance_tracker/views/home_screen.dart';
 import 'package:flutter_onboarding_slider/flutter_onboarding_slider.dart';
 
 void main() {
@@ -25,12 +26,13 @@ class WelcomeScreen extends StatelessWidget {
     return OnBoardingSlider(
         finishButtonText: 'Start',
         onFinish: () {
-          // Navigator.push(
-          //   context,
-          //   CupertinoPageRoute(
-          //     builder: (context) => const TabScaffold(),
-          //   ),
-          // );
+          Navigator.pushAndRemoveUntil(
+            context,
+            CupertinoPageRoute(
+              builder: (context) => const HomeScreen(),
+            ),
+            (route) => false,
+          );
         },
         finishButtonStyle: FinishButtonStyle(
           backgroundColor: kDarkBlueColor,
