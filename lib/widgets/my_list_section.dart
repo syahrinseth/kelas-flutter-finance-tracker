@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_finance_tracker/data/dtos/transaction_dto.dart';
+import 'package:intl/intl.dart';
 
 class MyListSection extends StatelessWidget {
   final String header;
@@ -14,8 +15,8 @@ class MyListSection extends StatelessWidget {
       children: children
           .map((transaction) => CupertinoListTile(
                 title: Text(transaction.description ?? transaction.category),
-                subtitle: Text(transaction.date.toString()),
-                trailing: Text('\$${transaction.amount.toStringAsFixed(2)}'),
+                subtitle: Text(DateFormat('MMMM dd').format(transaction.date)),
+                trailing: Text('RM ${transaction.amount.toStringAsFixed(2)}'),
               ))
           .toList(),
     );
